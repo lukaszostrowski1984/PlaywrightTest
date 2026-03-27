@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-// testing Ci pipeline integration
+// testing Ci pipeline integration tests
 
 test('Validating the shopping cart functionality', async ({ page }) => {
   await page.goto('https://ksiegarnia.bn.org.pl');
