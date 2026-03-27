@@ -1,5 +1,7 @@
 import { test, expect } from '@playwright/test';
 
+// testing Ci pipeline integration
+
 test('Validating the shopping cart functionality', async ({ page }) => {
   await page.goto('https://ksiegarnia.bn.org.pl');
   await page.getByRole('link', { name: 'Bibliografia', exact: true }).click();
