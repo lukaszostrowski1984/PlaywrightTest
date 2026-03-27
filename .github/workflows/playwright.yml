@@ -42,8 +42,8 @@ jobs:
       with:
         ref: gh-pages
         path: gh-pages
-      
-      name: Allure Report
+    
+    - name: Allure Report
       uses: simple-elf/allure-report-action@master
       if: always()
       with:
@@ -52,9 +52,7 @@ jobs:
         
     - name: Deploy to GitHub Pages
       if: always()
-      # uses: JamesIves/github-pages-deploy-action@v4
       uses: peaceiris/actions-gh-pages@v3
       with:
-        folder: playwright-report/
-        publish_branch: gh-pages
-        publish_dir: allure-history
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./allure-history
