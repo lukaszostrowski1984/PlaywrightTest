@@ -22,6 +22,7 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
 
+  # 1. Run Tests & Generate Results
     - name: Run Playwright tests
       run: npx playwright test --workers=1 --retries=0 --reporter=html
       continue-on-error: true
@@ -32,9 +33,28 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
+
+    # 2. Generate Allure Report
+    - name: Get Allure history
+      uses: actions/checkout@v4
+      if: always()
+      continue-on-error: true
+      with:
+        ref: gh-pages
+        path: gh-pages
+      
+      name: Allure Report
+      uses: simple-elf/allure-report-action@master
+      if: always()
+      with:
+        allure_results: allure-results
+        allure_history: allure-history
         
     - name: Deploy to GitHub Pages
       if: always()
-      uses: JamesIves/github-pages-deploy-action@v4
+      # uses: JamesIves/github-pages-deploy-action@v4
+      uses: peaceiris/actions-gh-pages@v3
       with:
         folder: playwright-report/
+        publish_branch: gh-pages
+        publish_dir: allure-history
