@@ -151,6 +151,11 @@ h2 {
   color: white;
 }
 
+.status.active {
+  background: linear-gradient(45deg, #3b82f6, #1d4ed8);
+  color: white;
+}
+
 .test-summary {
   margin-top: 50px;
   padding: 30px;
