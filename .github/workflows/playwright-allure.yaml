@@ -39,7 +39,11 @@ jobs:
       # przygotowanie struktury pod GitHub Pages
       - name: Prepare Pages content
         run: |
-          mkdir public
+          mkdir -p public
+          # Copy portfolio
+          cp .github/pages/index.html public/
+          cp .github/pages/styles.css public/
+          # Copy reports
           cp -r playwright-report public/playwright
           cp -r allure-report public/allure
 
