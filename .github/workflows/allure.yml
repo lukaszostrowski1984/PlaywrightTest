@@ -21,6 +21,10 @@ jobs:
       run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
+    - name: Ensure allure-playwright is installed
+      run: npm list allure-playwright || npm install allure-playwright --save-dev
+    - name: Verify allure-playwright installation
+      run: npx allure-playwright --version
 
     - name: Run Playwright tests with Allure
       run: npx playwright test --workers=1 --retries=0 --reporter=line,allure-playwright
