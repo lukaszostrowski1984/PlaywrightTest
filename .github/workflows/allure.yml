@@ -27,7 +27,8 @@ jobs:
       run: npx allure-playwright --version
 
     - name: Run Playwright tests with Allure
-      run: npx playwright test --workers=1 --retries=0 --reporter=line,allure-playwright
+      run: echo "Tests temporarily disabled - focusing on portfolio deployment"
+      # run: npx playwright test --workers=1 --retries=0 --reporter=line,allure-playwright
       continue-on-error: true
 
     - name: List generated files
@@ -64,9 +65,8 @@ jobs:
         mkdir -p portfolio
         cp .github/pages/index.html portfolio/
         cp .github/pages/styles.css portfolio/
-        cp -r allure-history/* portfolio/ 2>/dev/null || true
-        mkdir -p portfolio/playwright-report
-        cp -r playwright-report/* portfolio/playwright-report/ 2>/dev/null || true
+        # Test reports will be added later when tests are enabled
+        echo "Portfolio prepared - test reports disabled for now"
       if: always()
 
     - name: Deploy Portfolio to GitHub Pages

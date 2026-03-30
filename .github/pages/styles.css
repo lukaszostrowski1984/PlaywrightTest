@@ -146,8 +146,8 @@ h2 {
   color: white;
 }
 
-.status.active {
-  background: linear-gradient(45deg, #f59e0b, #d97706);
+.status.coming-soon {
+  background: linear-gradient(45deg, #6b7280, #4b5563);
   color: white;
 }
 
