@@ -1,3 +1,3 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","16175","Validating the shopping cart functionality","chromium","2026-04-08","passed","2026-04-08","","test-1.spec.ts","",""
-"","31279","Validating the shopping cart functionality","chromium","2026-04-08","broken","2026-04-08","","failing example.spec.ts","",""
+"","18114","Validating the shopping cart functionality","chromium","2026-04-08","passed","2026-04-08","","test-1.spec.ts","",""
+"","31402","Validating the shopping cart functionality","chromium","2026-04-08","broken","2026-04-08","","failing example.spec.ts","",""

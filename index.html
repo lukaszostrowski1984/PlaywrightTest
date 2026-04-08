@@ -2,94 +2,160 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Łukasz Ostrowski - QA Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
-  <h1>Łukasz Ostrowski</h1>
-  <p>QA Automation Engineer | Playwright | CI/CD</p>
+  <div class="header-top">
+    <h1>Łukasz Ostrowski</h1>
+    <button id="langToggle" class="lang-toggle" title="Switch language">EN / PL</button>
+  </div>
+  <p class="tagline">QA Automation Engineer | Playwright | CI/CD</p>
   <nav>
-    <a href="#about">O mnie</a>
-    <a href="#projects">Projekty</a>
-    <a href="#reports">Raporty</a>
-    <a href="#contact">Kontakt</a>
+    <a href="#about" data-pl="O mnie" data-en="About">O mnie</a>
+    <a href="#projects" data-pl="Projekty" data-en="Projects">Projekty</a>
+    <a href="#reports" data-pl="Raporty" data-en="Reports">Raporty</a>
+    <a href="#contact" data-pl="Kontakt" data-en="Contact">Kontakt</a>
   </nav>
 </header>
 
 <section id="about">
-  <h2>O mnie</h2>
-  <p>
-    Jestem testerem automatyzującym testy webowe. Specjalizuję się w Playwright,
-    CI/CD oraz raportowaniu testów. Posiadam doświadczenie w tworzeniu kompleksowych
-    suite'ów testowych oraz wdrażaniu automatycznych rozwiązań QA.
-  </p>
+  <h2 data-pl="O mnie" data-en="About Me">O mnie</h2>
+  
+  <div class="about-content">
+    <div class="about-section">
+      <h3 data-pl="Profil zawodowy" data-en="Professional Profile">Profil zawodowy</h3>
+      <p data-pl="Doświadczony Senior Quality Engineer z ponad 5-letnim doświadczeniem w testowaniu oprogramowania oraz automatyzacji testów, specjalizujący się w aplikacjach webowych i desktopowych w obszarze Business Intelligence. Obecnie pracuję w MicroStrategy, gdzie odpowiadam za projektowanie i rozwój automatyzacji testów dla nowych oraz istniejących funkcjonalności." data-en="Experienced Senior Quality Engineer with over 5 years of experience in software testing and test automation, specializing in web and desktop applications in the Business Intelligence field. Currently working at MicroStrategy, where I am responsible for designing and developing test automation for new and existing features.">Doświadczony Senior Quality Engineer z ponad 5-letnim doświadczeniem w testowaniu oprogramowania oraz automatyzacji testów, specjalizujący się w aplikacjach webowych i desktopowych w obszarze Business Intelligence. Obecnie pracuję w MicroStrategy, gdzie odpowiadam za projektowanie i rozwój automatyzacji testów dla nowych oraz istniejących funkcjonalności.</p>
+      
+      <p data-pl="Posiadam praktyczne doświadczenie w budowie frameworków testowych (Webdriver.IO), utrzymaniu istniejących testów (Protractor, Python) oraz zapewnianiu jakości poprzez kompleksowe procesy QA. Pracuję z rozbudowanymi środowiskami, obejmującymi chmurę (AWS, Azure, GCP), REST API oraz rozwiązania oparte na AI." data-en="I have practical experience in building test frameworks (Webdriver.IO), maintaining existing tests (Protractor, Python), and ensuring quality through comprehensive QA processes. I work with complex environments, including cloud solutions (AWS, Azure, GCP), REST APIs, and AI-based solutions.">Posiadam praktyczne doświadczenie w budowie frameworków testowych (Webdriver.IO), utrzymaniu istniejących testów (Protractor, Python) oraz zapewnianiu jakości poprzez kompleksowe procesy QA. Pracuję z rozbudowanymi środowiskami, obejmującymi chmurę (AWS, Azure, GCP), REST API oraz rozwiązania oparte na AI.</p>
+    </div>
+
+    <div class="about-section">
+      <h3 data-pl="Kluczowe obowiązki i osiągnięcia" data-en="Key Responsibilities and Achievements">Kluczowe obowiązki i osiągnięcia</h3>
+      <ul>
+        <li data-pl="Tworzenie automatyzacji testów dla nowych i istniejących funkcjonalności MicroStrategy Workstation (wersja desktopowa i webowa)" data-en="Creating test automation for new and existing MicroStrategy Workstation features (desktop and web versions)">Tworzenie automatyzacji testów dla nowych i istniejących funkcjonalności MicroStrategy Workstation (wersja desktopowa i webowa)</li>
+        <li data-pl="Budowa automatyzacji dla webowych konsol administracyjnych zarządzających środowiskami chmurowymi (AWS, Azure, Google Cloud)" data-en="Building automation for web administration consoles managing cloud environments (AWS, Azure, Google Cloud)">Budowa automatyzacji dla webowych konsol administracyjnych zarządzających środowiskami chmurowymi (AWS, Azure, Google Cloud)</li>
+        <li data-pl="Projektowanie i utrzymanie testów automatycznych z wykorzystaniem Webdriver.IO" data-en="Designing and maintaining automated tests using Webdriver.IO">Projektowanie i utrzymanie testów automatycznych z wykorzystaniem Webdriver.IO</li>
+        <li data-pl="Tworzenie dokumentacji QA: test planów, opisów funkcjonalności, test setów oraz test case'ów" data-en="Creating QA documentation: test plans, feature descriptions, test sets, and test cases">Tworzenie dokumentacji QA: test planów, opisów funkcjonalności, test setów oraz test case'ów</li>
+        <li data-pl="Organizacja i prowadzenie tzw. 'Blitz Missions' – skoordynowanych testów wykonywanych równocześnie przez wielu użytkowników o różnych poziomach uprawnień" data-en="Organizing and conducting 'Blitz Missions' – coordinated tests performed simultaneously by multiple users with different permission levels">Organizacja i prowadzenie tzw. 'Blitz Missions' – skoordynowanych testów wykonywanych równocześnie przez wielu użytkowników o różnych poziomach uprawnień</li>
+        <li data-pl="Przygotowywanie i zarządzanie środowiskami do testów wydajnościowych" data-en="Preparing and managing environments for performance testing">Przygotowywanie i zarządzanie środowiskami do testów wydajnościowych</li>
+        <li data-pl="Integracja automatyzacji z narzędziem ReportPortal w celu raportowania wyników testów" data-en="Integrating automation with ReportPortal tool for test result reporting">Integracja automatyzacji z narzędziem ReportPortal w celu raportowania wyników testów</li>
+        <li data-pl="Współpraca z zespołami developerskimi i wsparcia technicznego w analizie błędów i poprawie jakości produktu" data-en="Collaborating with development and technical support teams in error analysis and product quality improvement">Współpraca z zespołami developerskimi i wsparcia technicznego w analizie błędów i poprawie jakości produktu</li>
+      </ul>
+    </div>
+
+    <div class="about-section">
+      <h3 data-pl="Umiejętności techniczne" data-en="Technical Skills">Umiejętności techniczne</h3>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4 data-pl="Języki i technologie" data-en="Languages & Technologies">Języki i technologie</h4>
+          <p>JavaScript, TypeScript, Python, SQL</p>
+        </div>
+        <div class="skill-category">
+          <h4 data-pl="Automatyzacja testów" data-en="Test Automation">Automatyzacja testów</h4>
+          <p>Webdriver.IO, Selenium, Protractor, Playwright</p>
+        </div>
+        <div class="skill-category">
+          <h4 data-pl="Testowanie API" data-en="API Testing">Testowanie API</h4>
+          <p>Postman, Swagger, REST API</p>
+        </div>
+        <div class="skill-category">
+          <h4 data-pl="CI/CD i raportowanie" data-en="CI/CD & Reporting">CI/CD i raportowanie</h4>
+          <p>Jenkins, Allure, ReportPortal, GitHub Actions</p>
+        </div>
+        <div class="skill-category">
+          <h4 data-pl="Bazy danych" data-en="Databases">Bazy danych</h4>
+          <p>Microsoft SQL Server, SAP HANA</p>
+        </div>
+        <div class="skill-category">
+          <h4 data-pl="Chmura" data-en="Cloud Services">Chmura</h4>
+          <p>AWS, Azure, Google Cloud</p>
+        </div>
+        <div class="skill-category">
+          <h4 data-pl="Inne narzędzia" data-en="Other Tools">Inne narzędzia</h4>
+          <p>Git, Jira, Confluence</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <h3 data-pl="Dodatkowe doświadczenie" data-en="Additional Experience">Dodatkowe doświadczenie</h3>
+      <p data-pl="Posiadam również doświadczenie w obszarach wsparcia technicznego oraz R&D:" data-en="I also have experience in technical support and R&D areas:">Posiadam również doświadczenie w obszarach wsparcia technicznego oraz R&D:</p>
+      <ul>
+        <li data-pl="Wsparcie klientów i rozwiązywanie złożonych problemów w systemach BI" data-en="Customer support and troubleshooting complex issues in BI systems">Wsparcie klientów i rozwiązywanie złożonych problemów w systemach BI</li>
+        <li data-pl="Praca w środowisku badawczo-rozwojowym (projektowanie, testowanie, dokumentacja)" data-en="Working in research and development environment (design, testing, documentation)">Praca w środowisku badawczo-rozwojowym (projektowanie, testowanie, dokumentacja)</li>
+        <li data-pl="Tworzenie raportów, analiz oraz dokumentacji projektowej" data-en="Creating reports, analyses, and project documentation">Tworzenie raportów, analiz oraz dokumentacji projektowej</li>
+      </ul>
+    </div>
+  </div>
 </section>
 
 <section id="projects">
-  <h2>Projekty</h2>
+  <h2 data-pl="Projekty" data-en="Projects">Projekty</h2>
 
   <div class="card">
-    <h3>E2E Test Automation</h3>
-    <p>Kompletny projekt testów end-to-end z wykorzystaniem Playwright</p>
-    <p><strong>Technologie:</strong> Playwright, TypeScript, GitHub Actions, CI/CD</p>
-    <a href="https://github.com/lukaszostrowski1984/PlaywrightTest" target="_blank">Repozytorium GitHub</a>
+    <h3 data-pl="Automatyzacja testów E2E" data-en="E2E Test Automation">Automatyzacja testów E2E</h3>
+    <p data-pl="Kompletny projekt testów end-to-end z wykorzystaniem Playwright" data-en="Complete end-to-end test project using Playwright">Kompletny projekt testów end-to-end z wykorzystaniem Playwright</p>
+    <p><strong data-pl="Technologie:" data-en="Technologies:">Technologie:</strong> Playwright, TypeScript, GitHub Actions, CI/CD</p>
+    <a href="https://github.com/lukaszostrowski1984/PlaywrightTest" target="_blank" data-pl="Repozytorium GitHub" data-en="GitHub Repository">Repozytorium GitHub</a>
   </div>
 
   <div class="card">
-    <h3>Test Reporting System</h3>
-    <p>Zaawansowany system raportowania testów z Allure i Playwright</p>
-    <p><strong>Funkcjonalności:</strong> Raporty HTML, wideo nagrań, historia wyników</p>
-    <a href="#reports">Zobacz raporty</a>
+    <h3 data-pl="System raportowania testów" data-en="Test Reporting System">System raportowania testów</h3>
+    <p data-pl="Zaawansowany system raportowania testów z Allure i Playwright" data-en="Advanced test reporting system with Allure and Playwright">Zaawansowany system raportowania testów z Allure i Playwright</p>
+    <p><strong data-pl="Funkcjonalności:" data-en="Features:">Funkcjonalności:</strong> <span data-pl="Raporty HTML, wideo nagrań, historia wyników" data-en="HTML reports, video recordings, test history">Raporty HTML, wideo nagrań, historia wyników</span></p>
+    <a href="#reports" data-pl="Zobacz raporty" data-en="View Reports">Zobacz raporty</a>
   </div>
 
 </section>
 
 <section id="reports">
-  <h2>Raporty testów</h2>
-  <p>Wyniki automatycznych testów z różnych podejść do raportowania:</p>
+  <h2 data-pl="Raporty testów" data-en="Test Reports">Raporty testów</h2>
+  <p data-pl="Wyniki automatycznych testów z różnych podejść do raportowania:" data-en="Results of automated tests with different reporting approaches:">Wyniki automatycznych testów z różnych podejść do raportowania:</p>
 
   <div class="reports-grid">
     <div class="card report-card">
       <h3>🎭 Allure Report</h3>
-      <p>Zaawansowany raport z dashboard'em, trendami i szczegółowymi wynikami</p>
-      <p><strong>Zalety:</strong> Historia wyników, kategorie testów, wizualizacje</p>
-      <a href="allure-report/" target="_blank" class="report-link">Zobacz Allure Report</a>
+      <p data-pl="Zaawansowany raport z dashboard'em, trendami i szczegółowymi wynikami" data-en="Advanced report with dashboard, trends and detailed results">Zaawansowany raport z dashboard'em, trendami i szczegółowymi wynikami</p>
+      <p><strong data-pl="Zalety:" data-en="Benefits:">Zalety:</strong> <span data-pl="Historia wyników, kategorie testów, wizualizacje" data-en="Test history, test categories, visualizations">Historia wyników, kategorie testów, wizualizacje</span></p>
+      <a href="allure-report/" target="_blank" class="report-link" data-pl="Zobacz Allure Report" data-en="View Allure Report">Zobacz Allure Report</a>
       <div class="status-indicator">
-        <span class="status active">Aktywne</span>
+        <span class="status active" data-pl="Aktywne" data-en="Active">Aktywne</span>
       </div>
     </div>
 
     <div class="card report-card">
       <h3>🎬 Playwright HTML Report</h3>
-      <p>Natywny raport Playwright z wideo i screenshotami</p>
-      <p><strong>Zalety:</strong> Nagrania wideo błędów, bezpośrednia integracja</p>
-      <a href="playwright-report/" target="_blank" class="report-link">Zobacz Playwright Report</a>
+      <p data-pl="Natywny raport Playwright z wideo i screenshotami" data-en="Native Playwright report with videos and screenshots">Natywny raport Playwright z wideo i screenshotami</p>
+      <p><strong data-pl="Zalety:" data-en="Benefits:">Zalety:</strong> <span data-pl="Nagrania wideo błędów, bezpośrednia integracja" data-en="Error video recordings, direct integration">Nagrania wideo błędów, bezpośrednia integracja</span></p>
+      <a href="playwright-report/" target="_blank" class="report-link" data-pl="Zobacz Playwright Report" data-en="View Playwright Report">Zobacz Playwright Report</a>
       <div class="status-indicator">
-        <span class="status active">Aktywne</span>
+        <span class="status active" data-pl="Aktywne" data-en="Active">Aktywne</span>
       </div>
     </div>
   </div>
 
   <div class="test-summary">
-    <h3>Podsumowanie wyników</h3>
+    <h3 data-pl="Podsumowanie wyników" data-en="Test Summary">Podsumowanie wyników</h3>
     <div class="summary-grid">
       <div class="summary-item">
         <span class="metric">2</span>
-        <span class="label">Testy łącznie</span>
+        <span class="label" data-pl="Testy łącznie" data-en="Total Tests">Testy łącznie</span>
       </div>
       <div class="summary-item">
         <span class="metric">1</span>
-        <span class="label">Przechodzące</span>
+        <span class="label" data-pl="Przechodzące" data-en="Passing">Przechodzące</span>
       </div>
       <div class="summary-item">
         <span class="metric">1</span>
-        <span class="label">Nieprzechodzące</span>
+        <span class="label" data-pl="Nieprzechodzące" data-en="Failing">Nieprzechodzące</span>
       </div>
       <div class="summary-item">
         <span class="metric">100%</span>
-        <span class="label">Pokrycie</span>
+        <span class="label" data-pl="Pokrycie" data-en="Coverage">Pokrycie</span>
       </div>
     </div>
   </div>
@@ -97,19 +163,63 @@
 </section>
 
 <section id="contact">
-  <h2>Kontakt</h2>
+  <h2 data-pl="Kontakt" data-en="Contact">Kontakt</h2>
   <div class="contact-info">
-    <p>📧 <strong>Email:</strong> lukaszostrowski1984@gmail.com</p>
-    <p>🐙 <strong>GitHub:</strong> <a href="https://github.com/lukaszostrowski1984" target="_blank">lukaszostrowski1984</a></p>
-    <p>💼 <strong>LinkedIn:</strong> <a href="#" target="_blank">Łukasz Ostrowski</a></p>
+    <p>📧 <strong data-pl="Email:" data-en="Email:">Email:</strong> <a href="mailto:lukaszostrowski1984@gmail.com">lukaszostrowski1984@gmail.com</a></p>
+    <p>🐙 <strong data-pl="GitHub:" data-en="GitHub:">GitHub:</strong> <a href="https://github.com/lukaszostrowski1984" target="_blank">lukaszostrowski1984</a></p>
+    <p>💼 <strong data-pl="LinkedIn:" data-en="LinkedIn:">LinkedIn:</strong> <a href="#" target="_blank">Łukasz Ostrowski</a></p>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Łukasz Ostrowski | QA Automation Portfolio</p>
+  <p data-pl="© 2026 Łukasz Ostrowski | QA Automation Portfolio" data-en="© 2026 Łukasz Ostrowski | QA Automation Portfolio">© 2026 Łukasz Ostrowski | QA Automation Portfolio</p>
 </footer>
 
 <script>
+// Language switching functionality
+const STORAGE_KEY = 'preferredLanguage';
+let currentLanguage = localStorage.getItem(STORAGE_KEY) || 'pl';
+
+function switchLanguage(lang) {
+  currentLanguage = lang;
+  localStorage.setItem(STORAGE_KEY, lang);
+  
+  // Update all elements with data-pl and data-en attributes
+  document.querySelectorAll('[data-pl][data-en]').forEach(element => {
+    const text = element.getAttribute(`data-${lang}`);
+    if (text) {
+      element.textContent = text;
+    }
+  });
+  
+  // Update html lang attribute
+  document.documentElement.lang = lang;
+  
+  // Update button styling
+  updateLanguageButton();
+}
+
+function updateLanguageButton() {
+  const button = document.getElementById('langToggle');
+  if (currentLanguage === 'en') {
+    button.style.fontWeight = 'bold';
+  } else {
+    button.style.fontWeight = 'normal';
+  }
+}
+
+// Language toggle button
+document.getElementById('langToggle').addEventListener('click', function() {
+  const newLang = currentLanguage === 'pl' ? 'en' : 'pl';
+  switchLanguage(newLang);
+});
+
+// Initialize language on page load
+window.addEventListener('DOMContentLoaded', function() {
+  switchLanguage(currentLanguage);
+  updateLanguageButton();
+});
+
 // Smooth scrolling for navigation
 document.querySelectorAll('nav a').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
