@@ -1,0 +1,570 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - link "biblioteka narodowa":
+        - /url: http://www.bn.org.pl
+        - img "biblioteka narodowa" [ref=e4] [cursor=pointer]
+      - generic [ref=e5]:
+        - generic [ref=e8]:
+          - textbox [ref=e9]
+          - textbox [ref=e10]: szukaj w księgarni...
+        - link "wyszukiwanie zaawansowane" [ref=e12] [cursor=pointer]:
+          - /url: s/wyszukaj/aw/1/
+          - text: wyszukiwanie
+          - text: zaawansowane
+    - generic [ref=e13]:
+      - link "koszyk" [ref=e14] [cursor=pointer]:
+        - /url: s/koszyk/
+      - generic [ref=e15] [cursor=pointer]: "(3 PRODUKTY, SUMA: 250,00 zł)"
+      - link "logowanie" [ref=e17] [cursor=pointer]:
+        - /url: s/zaloguj/
+      - link "nowe konto" [ref=e19] [cursor=pointer]:
+        - /url: s/rejestracja/
+    - generic [ref=e22]:
+      - generic "serie wydawnicze BN" [ref=e23] [cursor=pointer]
+      - link "otwarty dostęp" [ref=e24] [cursor=pointer]:
+        - /url: s/wyniki/k/wolny/
+      - link "o wydawnictwie" [ref=e25] [cursor=pointer]:
+        - /url: s/owydawnictwie/
+      - img "Katalog inkunabułów" [ref=e27]
+  - generic [ref=e29]:
+    - generic [ref=e30]:
+      - img "kategorie" [ref=e31]
+      - list [ref=e33]:
+        - listitem [ref=e34]:
+          - link "Bibliografia" [ref=e35] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/Bibliografia
+          - list [ref=e36]:
+            - listitem [ref=e37]:
+              - 'link "Seria: Bibliografia Polska 1901-1939" [ref=e38] [cursor=pointer]':
+                - /url: s/wyniki/dzial/54/Seria-Bibliografia-Polska-1901-1939
+            - listitem [ref=e39]:
+              - 'link "Seria: Polska Bibliografia Bibliologiczna" [ref=e40] [cursor=pointer]':
+                - /url: s/wyniki/dzial/55/Seria-Polska-Bibliografia-Bibliologiczna
+            - listitem [ref=e41]:
+              - 'link "Seria: Polonica Zagraniczne: Bibliografia" [ref=e42] [cursor=pointer]':
+                - /url: s/wyniki/dzial/56/Seria-Polonica-Zagraniczne-Bibliografia
+            - listitem [ref=e43]:
+              - 'link "Seria: Prace Instytutu Bibliograficznego" [ref=e44] [cursor=pointer]':
+                - /url: s/wyniki/dzial/57/Seria-Prace-Instytutu-Bibliograficznego
+        - listitem [ref=e45]:
+          - link "Bibliotekoznawstwo" [ref=e46] [cursor=pointer]:
+            - /url: s/wyniki/dzial/59/Bibliotekoznawstwo
+        - listitem [ref=e47]:
+          - link "Historia" [ref=e48] [cursor=pointer]:
+            - /url: s/wyniki/dzial/63/Historia
+        - listitem [ref=e49]:
+          - link "Ikonografia" [ref=e50] [cursor=pointer]:
+            - /url: s/wyniki/dzial/91/Ikonografia
+        - listitem [ref=e51]:
+          - link "Judaika" [ref=e52] [cursor=pointer]:
+            - /url: s/wyniki/dzial/66/Judaika
+        - listitem [ref=e53]:
+          - link "Konserwacja" [ref=e54] [cursor=pointer]:
+            - /url: s/wyniki/dzial/69/Konserwacja
+        - listitem [ref=e55]:
+          - link "Literaturoznawstwo" [ref=e56] [cursor=pointer]:
+            - /url: s/wyniki/dzial/71/Literaturoznawstwo
+        - listitem [ref=e57]:
+          - link "Muzykologia" [ref=e58] [cursor=pointer]:
+            - /url: s/wyniki/dzial/72/Muzykologia
+        - listitem [ref=e59]:
+          - link "Polonika" [ref=e60] [cursor=pointer]:
+            - /url: s/wyniki/dzial/73/Polonika
+        - listitem [ref=e61]:
+          - link "Rękopiśmiennictwo" [ref=e62] [cursor=pointer]:
+            - /url: s/wyniki/dzial/75/Rekopismiennictwo
+        - listitem [ref=e63]:
+          - link "Albumy | Katalogi wystaw" [ref=e64] [cursor=pointer]:
+            - /url: s/wyniki/dzial/79/Albumy--Katalogi-wystaw
+        - listitem [ref=e65]:
+          - link "Druki bibliofilskie" [ref=e66] [cursor=pointer]:
+            - /url: s/wyniki/dzial/21/Druki-bibliofilskie
+      - list [ref=e68]:
+        - listitem [ref=e69]:
+          - link "Multimedia" [ref=e70] [cursor=pointer]:
+            - /url: s/wyniki/dzial/87/Multimedia
+        - listitem [ref=e71]:
+          - link "Otwarty dostęp" [ref=e72] [cursor=pointer]:
+            - /url: s/wyniki/dzial/35/Otwarty-dostep
+      - img "katalog produktów" [ref=e73]
+      - generic [ref=e74]:
+        - link "ONIX" [ref=e75] [cursor=pointer]:
+          - /url: onix.php
+        - link "PDF" [ref=e76] [cursor=pointer]:
+          - /url: index_pdf.php
+      - img "newsletter" [ref=e77]
+      - generic [ref=e78]:
+        - textbox [ref=e80]: adres@e-mail
+        - generic [ref=e81] [cursor=pointer]: DODAJ ADRES
+    - generic [ref=e82]:
+      - 'img "[Rozmiar: 70 bajtów]" [ref=e83]'
+      - generic [ref=e84]:
+        - link "WYDAWNICTWO BN" [ref=e85] [cursor=pointer]:
+          - /url: https://ksiegarnia.bn.org.pl/
+        - text: BIBLIOGRAFIA
+      - generic [ref=e87]:
+        - heading "Bibliografia" [level=1] [ref=e88]
+        - generic [ref=e89]:
+          - list:
+            - listitem [ref=e90]:
+              - 'link "Seria: Bibliografia Polska 1901-1939" [ref=e91] [cursor=pointer]':
+                - /url: s/wyniki/dzial/54/Seria-Bibliografia-Polska-1901-1939
+            - listitem [ref=e92]:
+              - 'link "Seria: Polska Bibliografia Bibliologiczna" [ref=e93] [cursor=pointer]':
+                - /url: s/wyniki/dzial/55/Seria-Polska-Bibliografia-Bibliologiczna
+            - listitem [ref=e94]:
+              - 'link "Seria: Polonica Zagraniczne: Bibliografia" [ref=e95] [cursor=pointer]':
+                - /url: s/wyniki/dzial/56/Seria-Polonica-Zagraniczne-Bibliografia
+            - listitem [ref=e96]:
+              - 'link "Seria: Prace Instytutu Bibliograficznego" [ref=e97] [cursor=pointer]':
+                - /url: s/wyniki/dzial/57/Seria-Prace-Instytutu-Bibliograficznego
+        - generic [ref=e98]:
+          - strong [ref=e99]: "Tytuły:"
+          - link "wszystkie" [ref=e100] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/53
+          - link "A" [ref=e101] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/A/53
+          - link "B" [ref=e102] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/B/53
+          - link "C" [ref=e103] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/C/53
+          - link "D" [ref=e104] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/D/53
+          - link "E" [ref=e105] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/E/53
+          - link "F" [ref=e106] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/F/53
+          - link "G" [ref=e107] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/G/53
+          - link "H" [ref=e108] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/H/53
+          - link "I" [ref=e109] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/I/53
+          - link "J" [ref=e110] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/J/53
+          - link "K" [ref=e111] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/K/53
+          - link "L" [ref=e112] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/L/53
+          - link "M" [ref=e113] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/M/53
+          - link "N" [ref=e114] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/N/53
+          - link "O" [ref=e115] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/O/53
+          - link "P" [ref=e116] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/P/53
+          - link "Q" [ref=e117] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/Q/53
+          - link "R" [ref=e118] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/R/53
+          - link "S" [ref=e119] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/S/53
+          - link "T" [ref=e120] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/T/53
+          - link "U" [ref=e121] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/U/53
+          - link "V" [ref=e122] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/V/53
+          - link "W" [ref=e123] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/W/53
+          - link "X" [ref=e124] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/X/53
+          - link "Y" [ref=e125] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/Y/53
+          - link "Z" [ref=e126] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/Z/53
+          - link "inne" [ref=e127] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/litt/inne/53
+        - generic "widok w formie kafelków" [ref=e128] [cursor=pointer]
+        - generic "widok w formie listy" [ref=e129] [cursor=pointer]
+        - generic [ref=e130]:
+          - text: "Sortuj według: tytułu, ceny,"
+          - generic [ref=e131] [cursor=pointer]:
+            - text: roku wydania
+            - img "rosnąco" [ref=e132]
+        - generic [ref=e133]: Wyniki 1 - 20 sposród 45
+        - generic [ref=e134]:
+          - generic [ref=e135]:
+            - img "Polska Bibliografia Bibliologiczna 2015" [ref=e138] [cursor=pointer]
+            - generic [ref=e139]:
+              - heading "Polska Bibliografia Bibliologiczna 2015" [level=2] [ref=e140]:
+                - link "Polska Bibliografia Bibliologiczna 2015" [ref=e141] [cursor=pointer]:
+                  - /url: 528/Polska-Bibliografia-Bibliologiczna-2015.html
+              - generic [ref=e142]:
+                - link "Katarzyna Krawczyk" [ref=e143] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/348/Katarzyna-Krawczyk
+                - text: ","
+                - link "Violetta Pomianowska" [ref=e144] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/349/Violetta--Pomianowska
+              - generic [ref=e146]: Rocznik 2015 jest kolejnym tomem PBB zredagowanym zgodnie z zasadami opracowywanymi przez zespół bibliograficzny Zakładu Zbiorów Bibliologicznych od stycznia 2016 roku. Szczegółowy zakres „Bibliografii” oraz jej schemat klasyfikacyjny odzwierciedla Spis treści. W PBB rejestrowane są...
+              - generic [ref=e148]: "cena: 60,00 zł"
+          - generic [ref=e150]:
+            - img "Katalog biblioteki Czesława Miłosza" [ref=e153] [cursor=pointer]
+            - generic [ref=e154]:
+              - heading "Katalog biblioteki Czesława Miłosza" [level=2] [ref=e155]:
+                - link "Katalog biblioteki Czesława Miłosza" [ref=e156] [cursor=pointer]:
+                  - /url: 506/Katalog-biblioteki-Czeslawa-Milosza.html
+              - link "Maria Bereśniewicz" [ref=e158] [cursor=pointer]:
+                - /url: s/wyniki/k/autor/id/332/Maria-Beresniewicz
+              - generic [ref=e160]:
+                - text: Pionierska publikacja prezentująca księgozbiór Czesława Miłosza – pierwszy katalog tego typu w Polsce – jest efektem opracowania i uporządkowania biblioteki Miłosza, zakupionej przez BN w 2012 roku od syna poety, Antoniego Miłosza. Razem z pozyskanym w tym samym czasie archiwum...
+                - paragraph [ref=e161]: więcej »
+              - generic [ref=e163]: "cena: 130,00 zł"
+          - generic [ref=e165]:
+            - img "Polska Bibliografia Bibliologiczna 2014" [ref=e168] [cursor=pointer]
+            - generic [ref=e169]:
+              - heading "Polska Bibliografia Bibliologiczna 2014" [level=2] [ref=e170]:
+                - link "Polska Bibliografia Bibliologiczna 2014" [ref=e171] [cursor=pointer]:
+                  - /url: 509/Polska-Bibliografia-Bibliologiczna-2014.html
+              - generic [ref=e172]:
+                - link "Grażyna Jaroszewicz" [ref=e173] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/205/Grazyna-Jaroszewicz
+                - text: ","
+                - link "Katarzyna Krawczyk" [ref=e174] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/330/Katarzyna-Krawczyk
+                - text: ","
+                - link "Maciej Szablewski" [ref=e175] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/179/Maciej-Szablewski
+              - generic [ref=e177]: Rocznik 2014 jest kolejnym tomem PBB zredagowanym zgodnie z zasadami opracowywanymi przez zespół bibliograficzny Zakładu Zbiorów Bibliologicznych od stycznia 2016 roku1. Szczegółowy zakres „Bibliografii” oraz jej schemat klasyfikacyjny odzwierciedla Spis treści. W PBB rejestrowane są...
+              - generic [ref=e179]: "cena: 60,00 zł"
+          - generic [ref=e181]:
+            - img "Polska Bibliografia Bibliologiczna 2013" [ref=e184] [cursor=pointer]
+            - generic [ref=e185]:
+              - heading "Polska Bibliografia Bibliologiczna 2013" [level=2] [ref=e186]:
+                - link "Polska Bibliografia Bibliologiczna 2013" [ref=e187] [cursor=pointer]:
+                  - /url: 497/Polska-Bibliografia-Bibliologiczna-2013-.html
+              - generic [ref=e188]:
+                - link "Grażyna Jaroszewicz" [ref=e189] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/317/Grazyna-Jaroszewicz
+                - text: ","
+                - link "Katarzyna Krawczyk" [ref=e190] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/330/Katarzyna-Krawczyk
+                - text: ","
+                - link "Maciej Szablewski" [ref=e191] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/179/Maciej-Szablewski
+              - generic [ref=e193]:
+                - text: Rocznik 2013 jest kolejnym tomem „Polskiej Bibliografii Bibliologicznej” zredagowanym zgodnie z zasadami opracowywanymi przez zespół bibliograficzny Zakładu Zbiorów Bibliologicznych od stycznia 2016 roku. W PBB rejestrowane są czasopisma, artykuły z czasopism i prac zbiorowych oraz...
+                - paragraph [ref=e194]: więcej »
+              - generic [ref=e196]: "cena: 60,00 zł"
+          - generic [ref=e198]:
+            - img "Bibliografia przekładów Josepha Conrada" [ref=e201] [cursor=pointer]
+            - generic [ref=e202]:
+              - heading "Bibliografia przekładów Josepha Conrada" [level=2] [ref=e203]:
+                - link "Bibliografia przekładów Josepha Conrada" [ref=e204] [cursor=pointer]:
+                  - /url: 481/Bibliografia-przekladow-Josepha-Conrada.html
+              - generic [ref=e205]:
+                - link "Grażyna Federowicz" [ref=e206] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/322/Grazyna--Federowicz
+                - text: ","
+                - link "Hadrian Kamiński" [ref=e207] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/321/Hadrian-Kaminski
+                - text: ","
+                - link "zespół Bibliografii Poloników Zagranicznych" [ref=e208] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/323/zespol-Bibliografii--Polonikow-Zagranicznych
+              - generic [ref=e210]:
+                - text: Bibliografia jest cennym źródłem wiedzy o tłumaczeniach utworów Josepha Conrada, wydawanych na całym świecie od początku XX wieku, kiedy to pojawiły się pierwsze przekłady z języka angielskiego, do edycji opublikowanych do końca roku 2017. Zawiera zarówno przekłady w języku...
+                - paragraph [ref=e211]: więcej »
+              - generic [ref=e213]: "cena: 60,00 zł"
+          - generic [ref=e215]:
+            - img "Polska Bibliografia Bibliologiczna 2012" [ref=e218] [cursor=pointer]
+            - generic [ref=e219]:
+              - heading "Polska Bibliografia Bibliologiczna 2012" [level=2] [ref=e220]:
+                - link "Polska Bibliografia Bibliologiczna 2012" [ref=e221] [cursor=pointer]:
+                  - /url: 479/Polska-Bibliografia-Bibliologiczna-2012.html
+              - generic [ref=e222]:
+                - link "Grażyna Jaroszewicz" [ref=e223] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/317/Grazyna-Jaroszewicz
+                - text: ","
+                - link "Katarzyna Sijka" [ref=e224] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/318/Katarzyna-Sijka
+                - text: ","
+                - link "Maciej Szablewski" [ref=e225] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/319/Maciej-Szablewski
+              - generic [ref=e227]: Rocznik 2012 jest kolejnym tomem Polskiej Bibliografii Bibliologicznej (PBB) zredagowanym zgodnie z nowymi zasadami, opracowywanymi przez zespół bibliograficzny Zakładu Zbiorów Bibliologicznych od stycznia 2016 roku. W stosunku do poprzedniego rocznika PBB wprowadzono kilka modyfikacji....
+              - generic [ref=e229]: "cena: 60,00 zł"
+          - generic [ref=e231]:
+            - img "Polska Bibliografia Bibliologiczna 2011" [ref=e234] [cursor=pointer]
+            - generic [ref=e235]:
+              - heading "Polska Bibliografia Bibliologiczna 2011" [level=2] [ref=e236]:
+                - link "Polska Bibliografia Bibliologiczna 2011" [ref=e237] [cursor=pointer]:
+                  - /url: 445/Polska-Bibliografia-Bibliologiczna-2011.html
+              - generic [ref=e238]:
+                - link "Maciej Szablewski" [ref=e239] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/179/Maciej-Szablewski
+                - text: ","
+                - link "Grażyna Jaroszewicz" [ref=e240] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/205/Grazyna-Jaroszewicz
+                - text: ","
+                - link "Katarzyna Sijka" [ref=e241] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/288/Katarzyna-Sijka
+              - generic [ref=e243]:
+                - text: Rocznik 2011 Polskiej Bibliografii Bibliologicznej (PBB) został zredagowany wedle nowych zasad, ustalonych przez zespół bibliograficzny Zakładu Zbiorów Bibliologicznych. Zmodyfikowano schemat klasyfikacyjny, co spowodowało zmniejszenie liczby zarejestrowanych...
+                - paragraph [ref=e244]: więcej »
+              - generic [ref=e246]: "cena: 60,00 zł"
+          - generic [ref=e248]:
+            - 'img "Bibliografia Polska 1901-1939, t. 18: Koro-Krasu" [ref=e251] [cursor=pointer]'
+            - generic [ref=e252]:
+              - 'heading "Bibliografia Polska 1901-1939, t. 18: Koro-Krasu" [level=2] [ref=e253]':
+                - 'link "Bibliografia Polska 1901-1939, t. 18: Koro-Krasu" [ref=e254] [cursor=pointer]':
+                  - /url: 428/Bibliografia-Polska-1901-1939--t-18-Koro-Krasu.html
+              - generic [ref=e255]:
+                - link "Małgorzata Barańska" [ref=e256] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/166/Malgorzata--Baranska
+                - text: ","
+                - link "Anna Bobrowicz" [ref=e257] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/167/Anna-Bobrowicz
+                - text: ","
+                - link "Hanna Machnik" [ref=e258] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/168/Hanna-Machnik
+              - generic [ref=e260]: Osiemnasty tom Bibliografii polskiej 1901-1939 obejmuje hasła na litery Koro-Krasu i zawiera ponad 6,2 tysiąca pozycji. Bibliografia opracowywana jest przez Zakład Bibliografii Polskiej 1901-1939 w systemie MAK z zastosowaniem formatu MARC 21. Publikacja stanowi nieocenione źródło informacji...
+              - generic [ref=e262]: "cena: 75,00 zł"
+          - generic [ref=e264]:
+            - img "Quo Vadis Henryka Sienkiewicza" [ref=e267] [cursor=pointer]
+            - generic [ref=e268]:
+              - 'heading "Quo Vadis Henryka Sienkiewicza: Bibliografia wydań polskich i obcojęzycznych" [level=2] [ref=e269]':
+                - 'link "Quo Vadis Henryka Sienkiewicza: Bibliografia wydań polskich i obcojęzycznych" [ref=e270] [cursor=pointer]':
+                  - /url: 404/Quo-Vadis-Henryka-Sienkiewicza.html
+              - generic [ref=e271]:
+                - link "Grażyna Federowicz" [ref=e272] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/33/Grazyna--Federowicz
+                - text: (red.)
+              - generic [ref=e274]:
+                - text: Bibliografia polskich i obcojęzycznych wydań Quo vadis Henryka Sienkiewicza to publikacja jubileuszowa, wydana z okazji 120-lecia pierwszego opublikowania tego dzieła drukiem przez firmę wydawniczą Gebethner i Wolff w 1896 roku. Gromadzi ona 2002 opisy bibliograficzne książek wydanych...
+                - paragraph [ref=e275]: więcej »
+              - link [ref=e277] [cursor=pointer]:
+                - /url: pdf/Quo Vadis.pdf
+          - generic [ref=e278]:
+            - 'img "Bibliografia polska 1901-1939, t. 17: Kn-Korn" [ref=e281] [cursor=pointer]'
+            - generic [ref=e282]:
+              - 'heading "Bibliografia polska 1901-1939, t. 17: Kn-Korn" [level=2] [ref=e283]':
+                - 'link "Bibliografia polska 1901-1939, t. 17: Kn-Korn" [ref=e284] [cursor=pointer]':
+                  - /url: 208/Bibliografia-polska-1901-1939--t-17-Kn-Korn.html
+              - generic [ref=e285]:
+                - link "Małgorzata Barańska" [ref=e286] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/166/Malgorzata--Baranska
+                - text: (red.),
+                - link "Anna Bobrowicz" [ref=e287] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/167/Anna-Bobrowicz
+                - text: (red.),
+                - link "Hanna Machnik" [ref=e288] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/168/Hanna-Machnik
+                - text: (red.)
+              - generic [ref=e290]: Siedemnasty tom Bibliografii polskiej 1901-1939 obejmuje hasła na litery Kn-Korn i zawiera ponad 6,4 tysiąca pozycji. Bibliografia opracowywana jest przez Zakład Bibliografii Polskiej 1901-1939 w systemie MAK z zastosowaniem formatu MARC 21. Publikacja stanowi nieocenione źródło informacji o...
+              - generic [ref=e292]: "cena: 75,00 zł"
+          - generic [ref=e294]:
+            - 'img "Bibliografia Polska 1901-1939, t. 16: Jednodniówki A-Ż" [ref=e297] [cursor=pointer]'
+            - generic [ref=e298]:
+              - 'heading "Bibliografia Polska 1901-1939, t. 16: Jednodniówki A-Ż" [level=2] [ref=e299]':
+                - 'link "Bibliografia Polska 1901-1939, t. 16: Jednodniówki A-Ż" [ref=e300] [cursor=pointer]':
+                  - /url: 191/Bibliografia-Polska-1901-1939--t-16-Jednodniowki-A-Z.html
+              - generic [ref=e301]:
+                - link "Ewa Dombek" [ref=e302] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/17/Ewa--Dombek
+                - text: (red.),
+                - link "Hanna Machnik" [ref=e303] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/168/Hanna-Machnik
+                - text: (red.)
+              - generic [ref=e305]:
+                - text: Szesnasty tom Bibliografii Polskiej 1901-1939 zawiera opisy – wybranych z całości kartoteki źródłowej – szczególnych publikacji, jakimi są jednodniówki. Hasła uzupełniono o wiele nowych tytułów, wyszukanych poza tą kartoteką. W publikacji zamieszczono opisy około 5000...
+                - paragraph [ref=e306]: więcej »
+              - generic [ref=e308]: "cena: 75,00 zł"
+          - generic [ref=e310]:
+            - img "Polska Bibliografia Bibliologiczna 2010" [ref=e313] [cursor=pointer]
+            - generic [ref=e314]:
+              - heading "Polska Bibliografia Bibliologiczna 2010" [level=2] [ref=e315]:
+                - link "Polska Bibliografia Bibliologiczna 2010" [ref=e316] [cursor=pointer]:
+                  - /url: 197/Polska-Bibliografia-Bibliologiczna-2010.html
+              - link "Marzena Przybysz" [ref=e318] [cursor=pointer]:
+                - /url: s/wyniki/k/autor/id/98/Marzena-Przybysz
+              - generic [ref=e320]: W roczniku zostały uwzględnione wydawnictwa zwarte, czasopisma, artykuły z czasopism, fragmenty piśmiennicze w formie graficznej i elektronicznej opublikowane w Polsce, a także za granicą, jeśli przez osobę autora lub tematycznie związane były z Polską. Polska Bibliografia Bibliologiczna...
+              - generic [ref=e322]: "cena: 65,00 zł"
+          - generic [ref=e324]:
+            - 'img "Bibliografia polska 1901-1939, t. 15: Kat-Km" [ref=e327] [cursor=pointer]'
+            - generic [ref=e328]:
+              - 'heading "Bibliografia polska 1901-1939, t. 15: Kat-Km" [level=2] [ref=e329]':
+                - 'link "Bibliografia polska 1901-1939, t. 15: Kat-Km" [ref=e330] [cursor=pointer]':
+                  - /url: 177/Bibliografia-polska-1901-1939--t-15-Kat-Km.html
+              - generic [ref=e331]:
+                - link "Anna Bobrowicz" [ref=e332] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/16/Anna--Bobrowicz
+                - text: (red.),
+                - link "Irena Bracławska" [ref=e333] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/147/Irena-Braclawska
+                - text: (red.),
+                - link "Katarzyna Gołębiowska" [ref=e334] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/148/Katarzyna-Golebiowska
+                - text: (red.)
+              - generic [ref=e336]: Piętnasty tom Bibliografii polskiej 1901-1939 obejmuje hasła na litery Kat-Km i zawiera ponad 6,6 tysiąca pozycji. Bibliografia opracowywana jest przez Zakład Bibliografii Polskiej 1901-1939 w systemie MAK z zastosowaniem formatu MARC 21. Publikacja stanowi nieocenione źródło informacji o...
+              - generic [ref=e338]: "cena: 75,00 zł"
+          - generic [ref=e340]:
+            - 'img "Bibliografia polska 1901-1939, t. 14: Jol-Kaś" [ref=e343] [cursor=pointer]'
+            - generic [ref=e344]:
+              - 'heading "Bibliografia polska 1901-1939, t. 14: Jol-Kaś" [level=2] [ref=e345]':
+                - 'link "Bibliografia polska 1901-1939, t. 14: Jol-Kaś" [ref=e346] [cursor=pointer]':
+                  - /url: 9/Bibliografia-polska-1901-1939--t-14-Jol-Kas.html
+              - generic [ref=e347]:
+                - link "Małgorzata Barańska" [ref=e348] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/19/Malgorzata--Baranska
+                - text: (red.),
+                - link "Małgorzata Grochowska" [ref=e349] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/20/Malgorzata--Grochowska
+                - text: (red.),
+                - link "Hanna Machnik" [ref=e350] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/21/Hanna--Machnik
+                - text: (red.)
+              - generic [ref=e352]:
+                - text: Czternasty tom Bibliografii polskiej 1901-1939 obejmuje hasła na litery Jol-Kaś i zawiera ponad 6,6 tysiąca pozycji. Bibliografia opracowywana jest przez Zakład Bibliografii Polskiej 1901-1939 w systemie MAK z zastosowaniem formatu MARC 21. Publikacja stanowi nieocenione źródło...
+                - paragraph [ref=e353]: więcej »
+              - generic [ref=e355]: "cena: 75,00 zł"
+          - generic [ref=e357]:
+            - 'img "Bibliografia polska 1901-1939, t. 13: Jad-Jok" [ref=e360] [cursor=pointer]'
+            - generic [ref=e361]:
+              - 'heading "Bibliografia polska 1901-1939, t. 13: Jad-Jok" [level=2] [ref=e362]':
+                - 'link "Bibliografia polska 1901-1939, t. 13: Jad-Jok" [ref=e363] [cursor=pointer]':
+                  - /url: 3/Bibliografia-polska-1901-1939--t-13-Jad-Jok.html
+              - generic [ref=e364]:
+                - link "Ewa Dombek" [ref=e365] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/17/Ewa--Dombek
+                - text: (red.),
+                - link "Grażyna Federowicz" [ref=e366] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/33/Grazyna--Federowicz
+                - text: (red.)
+              - generic [ref=e368]: Trzynasty tom Bibliografii polskiej 1901-1939 obejmuje hasła na litery Jad-Jok i zawiera ponad 6,4 tysiąca pozycji. Bibliografia opracowywana jest przez Zakład Bibliografii Polskiej 1901-1939 w systemie MAK z zastosowaniem formatu MARC 21. Publikacja stanowi nieocenione źródło informacji o...
+              - generic [ref=e370]: "cena: 75,00 zł"
+          - generic [ref=e372]:
+            - img "Szósta Ogólnokrajowa Narada Bibliografów" [ref=e375] [cursor=pointer]
+            - generic [ref=e376]:
+              - 'heading "Szósta Ogólnokrajowa Narada Bibliografów: Warszawa, 23-24 października 2008" [level=2] [ref=e377]':
+                - 'link "Szósta Ogólnokrajowa Narada Bibliografów: Warszawa, 23-24 października 2008" [ref=e378] [cursor=pointer]':
+                  - /url: 270/Szosta-Ogolnokrajowa-Narada-Bibliografow.html
+              - generic [ref=e381]:
+                - text: Tom 49 serii wydawniczej "Prace Instytutu Bibliograficznego" będący pokłosiem Szóstej Ogólnokrajowej Narady Bibliografów, zorganizowanej pod hasłem "Bibliografia w erze cyfrowej" przez Bibliotekę Narodową oraz Stowarzyszenie Bibliotekarzy Polskich. Publikacja rejestruje referaty i...
+                - paragraph [ref=e382]: więcej »
+              - generic [ref=e384]: "cena: 52,50 zł"
+          - generic [ref=e386]:
+            - 'img "Bibliografia polska 1901-1939, t. 10: Gos-Gz" [ref=e389] [cursor=pointer]'
+            - generic [ref=e390]:
+              - 'heading "Bibliografia polska 1901-1939, t. 10: Gos-Gz" [level=2] [ref=e391]':
+                - 'link "Bibliografia polska 1901-1939, t. 10: Gos-Gz" [ref=e392] [cursor=pointer]':
+                  - /url: 213/Bibliografia-polska-1901-1939--t-10-Gos-Gz.html
+              - generic [ref=e393]:
+                - link "Ewa Dombek" [ref=e394] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/17/Ewa--Dombek
+                - text: (red.),
+                - link "Hanna Machnik" [ref=e395] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/168/Hanna-Machnik
+                - text: (red.),
+                - link "Elżbieta Sterzycka" [ref=e396] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/14/Elzbieta--Sterzycka
+                - text: (red.)
+              - generic [ref=e398]:
+                - text: Dziesiąty tom Bibliografii polskiej 1901-1939 obejmuje hasła na litery Gos-Gz. Bibliografia opracowywana jest przez Zakład Bibliografii Polskiej 1901-1939 w systemie MAK z zastosowaniem formatu MARC 21. Publikacja stanowi nieocenione źródło informacji o wszystkich działach piśmiennictwa...
+                - paragraph [ref=e399]: więcej »
+              - generic [ref=e401]: "cena: 70,00 zł"
+          - generic [ref=e403]:
+            - 'img "Bibliografia polska 1901-1939, t. 11: H-Hoł" [ref=e406] [cursor=pointer]'
+            - generic [ref=e407]:
+              - 'heading "Bibliografia polska 1901-1939, t. 11: H-Hoł" [level=2] [ref=e408]':
+                - 'link "Bibliografia polska 1901-1939, t. 11: H-Hoł" [ref=e409] [cursor=pointer]':
+                  - /url: 212/Bibliografia-polska-1901-1939--t-11-H-Hol.html
+              - generic [ref=e410]:
+                - link "Grażyna Federowicz" [ref=e411] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/33/Grazyna--Federowicz
+                - text: (red.),
+                - link "Maria Kaczyńska" [ref=e412] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/85/Maria--Kaczynska
+                - text: (red.),
+                - link "Iwona Maziarz" [ref=e413] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/12/Iwona-Maziarz
+                - text: (red.)
+              - generic [ref=e415]:
+                - text: Jedenasty tom Bibliografii polskiej 1901-1939 obejmuje hasła na litery H-Hoł. Bibliografia opracowywana jest przez Zakład Bibliografii Polskiej 1901-1939 w systemie MAK z zastosowaniem formatu MARC 21. Publikacja stanowi nieocenione źródło informacji o wszystkich działach piśmiennictwa...
+                - paragraph [ref=e416]: więcej »
+              - generic [ref=e418]: "cena: 70,00 zł"
+          - generic [ref=e420]:
+            - 'img "Bibliografia polska 1901-1939, t. 12: Hom-Jac" [ref=e423] [cursor=pointer]'
+            - generic [ref=e424]:
+              - 'heading "Bibliografia polska 1901-1939, t. 12: Hom-Jac" [level=2] [ref=e425]':
+                - 'link "Bibliografia polska 1901-1939, t. 12: Hom-Jac" [ref=e426] [cursor=pointer]':
+                  - /url: 211/Bibliografia-polska-1901-1939--t-12-Hom-Jac.html
+              - generic [ref=e427]:
+                - link "Małgorzata Barańska" [ref=e428] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/166/Malgorzata--Baranska
+                - text: (red.),
+                - link "Anna Bobrowicz" [ref=e429] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/167/Anna-Bobrowicz
+                - text: (red.),
+                - link "Katarzyna Gołębiowska" [ref=e430] [cursor=pointer]:
+                  - /url: s/wyniki/k/autor/id/148/Katarzyna-Golebiowska
+                - text: (red.)
+              - generic [ref=e432]:
+                - text: Dwunasty tom Bibliografii polskiej 1901-1939 obejmuje hasła na litery Hom-Jac. Bibliografia opracowywana jest przez Zakład Bibliografii Polskiej 1901-1939 w systemie MAK z zastosowaniem formatu MARC 21. Publikacja stanowi nieocenione źródło informacji o wszystkich działach piśmiennictwa...
+                - paragraph [ref=e433]: więcej »
+              - generic [ref=e435]: "cena: 70,00 zł"
+          - generic [ref=e437]:
+            - img "Karol Estreicher (1827-1908)" [ref=e440] [cursor=pointer]
+            - generic [ref=e441]:
+              - 'heading "Karol Estreicher (1827-1908): Bibliograf, bibliotekarz, historyk teatru" [level=2] [ref=e442]':
+                - 'link "Karol Estreicher (1827-1908): Bibliograf, bibliotekarz, historyk teatru" [ref=e443] [cursor=pointer]':
+                  - /url: 220/Karol-Estreicher-1827-1908.html
+              - link "Joanna Tarasiewicz" [ref=e445] [cursor=pointer]:
+                - /url: s/wyniki/k/autor/id/182/Joanna-Tarasiewicz
+              - generic [ref=e447]:
+                - text: Kolejna publikacja z serii Prace Instytutu Bibliograficznego, zawierająca materiały z Sesji Jubileuszowej w 100. rocznicę śmierci Karola Estreichera - wybitnego bibliografa, wieloletniego dyrektora Biblioteki Jagiellońskiej, historyka literatury i teatru, także prawnika i...
+                - paragraph [ref=e448]: więcej »
+              - generic [ref=e450]: "cena: 23,10 zł"
+        - generic [ref=e452]:
+          - strong [ref=e454]: "1"
+          - text: "|"
+          - link "2" [ref=e455] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/zacz/20/53
+            - strong [ref=e456]: "2"
+          - text: "|"
+          - link "3" [ref=e457] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/zacz/40/53
+            - strong [ref=e458]: "3"
+          - text: "|"
+          - link "Następna strona" [ref=e459] [cursor=pointer]:
+            - /url: s/wyniki/dzial/53/zacz/20/53
+            - img "Następna strona" [ref=e460]
+  - generic [ref=e461]:
+    - generic [ref=e463]:
+      - generic [ref=e464]:
+        - text: kontakt
+        - img "mail" [ref=e465]
+        - link "wydawnictwo@bn.org.pl" [ref=e466] [cursor=pointer]:
+          - /url: mailto:wydawnictwo@bn.org.pl
+      - generic [ref=e467]: Pomoc
+      - generic [ref=e468]: Informacje
+      - link "Mapa witryny" [ref=e469] [cursor=pointer]:
+        - /url: s/mapa/
+    - generic [ref=e471]:
+      - link "Jak złożyć zamówienie" [ref=e472] [cursor=pointer]:
+        - /url: s/jakzlozyc/
+      - link "Najcześciej zadawane pytania" [ref=e473] [cursor=pointer]:
+        - /url: s/faq/
+      - link "Status zamówienia" [ref=e474] [cursor=pointer]:
+        - /url: s/historia_zakupow/
+      - link "Przypomnij hasło" [ref=e475] [cursor=pointer]:
+        - /url: s/zaloguj/przypomnij/1/
+    - generic [ref=e476]:
+      - link "Regulamin" [ref=e477] [cursor=pointer]:
+        - /url: s/regulamin/
+      - link "Odstąpienie od umowy" [ref=e478] [cursor=pointer]:
+        - /url: s/odstapienie/
+      - link "Polityka prywatności" [ref=e479] [cursor=pointer]:
+        - /url: s/polityka/
+      - link "Koszty wysyłki" [ref=e480] [cursor=pointer]:
+        - /url: s/kosztyt/
+      - link "Opcje płatności" [ref=e481] [cursor=pointer]:
+        - /url: s/platnosci/
+    - generic [ref=e483]:
+      - text: opracowanie
+      - link "Prekursor" [ref=e484] [cursor=pointer]:
+        - /url: http://www.prekursor.com.pl
+```

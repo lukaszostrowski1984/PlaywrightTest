@@ -1,2 +1,0 @@
-Calculated cart total: 430, Displayed order total: 430
-Expected new total: 680, Displayed new order total: 680
