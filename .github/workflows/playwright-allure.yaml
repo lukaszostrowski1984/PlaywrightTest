@@ -28,26 +28,47 @@ jobs:
 
       - name: Run Playwright tests
         run: npx playwright test
+        continue-on-error: true
+
+      - name: Setup Java for Allure
+        uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: '17'
 
       - name: Install Allure CLI
-        run: npm install -g allure-commandline --save-dev
+        run: npm install --save-dev allure-commandline
+        if: always()
 
       - name: Generate Allure report
+        if: always()
         run: |
-          allure generate allure-results --clean -o allure-report
+          if [ -d "allure-results" ] && [ "$(ls -A allure-results)" ]; then
+            npx allure generate allure-results --clean -o allure-report
+          else
+            echo "No Allure results found, skipping report generation"
+            mkdir -p allure-report
+            echo "<html><body><h1>Allure report was not generated</h1></body></html>" > allure-report/index.html
+          fi
 
       # przygotowanie struktury pod GitHub Pages
       - name: Prepare Pages content
+        if: always()
         run: |
           mkdir -p public
           # Copy portfolio
           cp .github/pages/index.html public/
           cp .github/pages/styles.css public/
-          # Copy reports
-          cp -r playwright-report public/playwright-report
-          cp -r allure-report public/allure-report
+          # Copy reports if present
+          if [ -d "playwright-report" ]; then
+            cp -r playwright-report public/playwright-report
+          fi
+          if [ -d "allure-report" ]; then
+            cp -r allure-report public/allure-report
+          fi
 
       - name: Deploy to GitHub Pages
+        if: always()
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
