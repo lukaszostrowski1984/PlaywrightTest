@@ -44,8 +44,8 @@ jobs:
           cp .github/pages/index.html public/
           cp .github/pages/styles.css public/
           # Copy reports
-          cp -r playwright-report public/playwright
-          cp -r allure-report public/allure
+          cp -r playwright-report public/playwright-report
+          cp -r allure-report public/allure-report
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
