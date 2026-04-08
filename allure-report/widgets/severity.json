@@ -1,0 +1,1 @@
+[{"uid":"4b99113c12723bc8","name":"Validating the shopping cart functionality","time":{"start":1775639381507,"stop":1775639399392,"duration":17885},"status":"passed","severity":"normal"},{"uid":"ed8bc72f2af49ea5","name":"Validating the shopping cart functionality","time":{"start":1775639348814,"stop":1775639380241,"duration":31427},"status":"broken","severity":"normal"}]
